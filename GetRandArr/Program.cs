@@ -5,8 +5,8 @@
 var array = GenerateArray(12); 
 
 PrintArray(array);
-SumPosit(array);
-SumNegat(array);
+Console.Write(SumPosit(array));
+Console.Write(SumNegat(array));
 
 
 int[] GenerateArray(int length)// метод создает ранд массив целого размера
@@ -36,7 +36,7 @@ int SumPosit(int[] array) // метод считает сумму положит
         
     } 
     Console.WriteLine();
-    Console.Write(sum);
+    // Console.Write(sum);  - можно прописать и здесь но из строки запуска убрать вывод метода (только запуск)
     return sum;
 }
 
@@ -49,6 +49,6 @@ int SumNegat(int[] array) // метод считает сумму отрицат
         
     } 
     Console.WriteLine();
-    Console.Write(sum);
+    
     return sum;
 }
